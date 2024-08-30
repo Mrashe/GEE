@@ -1,0 +1,1 @@
+python launch.py --config configs/add.yaml --train --gpu 1 data.source=/home/xshe/4D/data/lego system.gs_source=/home/xshe/4D/data/lego system.inpaint_prompt="a basketball on the bulldozer" system.refine_prompt="make it a basketball" system.cache_overwrite=False system.cache_dir="add_dog"  trainer.max_steps=1  

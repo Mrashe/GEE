@@ -1,0 +1,61 @@
+/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/controlnet_aux/mediapipe_face/mediapipe_face_common.py:7: UserWarning: The module 'mediapipe' is not installed. The package will have limited functionality. Please install it using the command: pip install 'mediapipe'
+  warnings.warn(
+Seed set to 0
+Some weights of the model checkpoint at bert-base-uncased were not used when initializing BertModel: ['cls.predictions.bias', 'cls.predictions.transform.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.seq_relationship.bias', 'cls.seq_relationship.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.dense.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+[32m[INFO] GPU available: True (cuda), used: True[0m
+[32m[INFO] TPU available: False, using: 0 TPU cores[0m
+[32m[INFO] IPU available: False, using: 0 IPUs[0m
+[32m[INFO] HPU available: False, using: 0 HPUs[0m
+[32m[INFO] You are using a CUDA device ('NVIDIA RTX 6000 Ada Generation') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision[0m
+[32m[INFO] LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [1][0m
+[32m[INFO] 
+  | Name            | Type                 | Params
+---------------------------------------------------------
+0 | perceptual_loss | PerceptualLoss       | 14.7 M
+1 | text_segmentor  | LangSAMTextSegmentor | 0     
+---------------------------------------------------------
+0         Trainable params
+14.7 M    Non-trainable params
+14.7 M    Total params
+58.865    Total estimated model params size (MB)[0m
+[32m[INFO] Validation results will be saved to outputs/edit-n2n/Turn_him_into_Albert_Einstein@20240516-110445/save[0m
+feature_dim: 64
+loaded pretrained LPIPS loss from threestudio/utils/lpips/vgg.pth
+final text_encoder_type: bert-base-uncased
+Model loaded from /home/xshe/.cache/huggingface/hub/models--ShilongLiu--GroundingDINO/snapshots/a94c9b567a2a374598f05c584e96798a170c56fb/groundingdino_swinb_cogcoor.pth 
+ => _IncompatibleKeys(missing_keys=[], unexpected_keys=['label_enc.weight'])
+outputs/model/20240516110451
+2000 total_view_num 1500 max_view_num
+loading model from exists/home/xshe/4D/steak_100/
+load ply /home/xshe/4D/steak_100/
+  0%|          | 0/500 [00:00<?, ?it/s]  0%|          | 1/500 [00:00<02:02,  4.07it/s]  0%|          | 2/500 [00:00<01:44,  4.79it/s]  1%|          | 3/500 [00:00<01:38,  5.02it/s]  1%|          | 4/500 [00:00<01:35,  5.20it/s]  1%|          | 5/500 [00:00<01:32,  5.33it/s]  1%|          | 6/500 [00:01<01:31,  5.41it/s]  1%|▏         | 7/500 [00:01<01:29,  5.52it/s]  2%|▏         | 8/500 [00:01<01:30,  5.46it/s]  2%|▏         | 9/500 [00:01<01:29,  5.49it/s]  2%|▏         | 10/500 [00:01<01:28,  5.52it/s]  2%|▏         | 11/500 [00:02<01:28,  5.52it/s]  2%|▏         | 12/500 [00:02<01:29,  5.44it/s]  3%|▎         | 13/500 [00:02<01:29,  5.46it/s]  3%|▎         | 14/500 [00:02<01:29,  5.45it/s]  3%|▎         | 15/500 [00:02<01:28,  5.46it/s]  3%|▎         | 16/500 [00:02<01:27,  5.50it/s]  3%|▎         | 17/500 [00:03<01:28,  5.49it/s]  4%|▎         | 18/500 [00:03<01:27,  5.48it/s]  4%|▍         | 19/500 [00:03<01:27,  5.52it/s]  4%|▍         | 20/500 [00:03<01:25,  5.60it/s]  4%|▍         | 21/500 [00:03<01:27,  5.46it/s]  4%|▍         | 22/500 [00:04<01:26,  5.51it/s]  5%|▍         | 23/500 [00:04<01:25,  5.55it/s]  5%|▍         | 24/500 [00:04<01:26,  5.48it/s]  5%|▌         | 25/500 [00:04<01:26,  5.47it/s]  5%|▌         | 26/500 [00:04<01:26,  5.49it/s]  5%|▌         | 27/500 [00:04<01:25,  5.53it/s]  6%|▌         | 28/500 [00:05<01:26,  5.47it/s]  6%|▌         | 29/500 [00:05<01:25,  5.49it/s]  6%|▌         | 30/500 [00:05<01:25,  5.48it/s]  6%|▌         | 31/500 [00:05<01:25,  5.47it/s]  6%|▋         | 32/500 [00:05<01:25,  5.49it/s]  7%|▋         | 33/500 [00:06<01:26,  5.42it/s]  7%|▋         | 34/500 [00:06<01:25,  5.47it/s]  7%|▋         | 35/500 [00:06<01:24,  5.53it/s]  7%|▋         | 36/500 [00:06<01:23,  5.58it/s]  7%|▋         | 37/500 [00:06<01:23,  5.56it/s]  8%|▊         | 38/500 [00:06<01:22,  5.59it/s]  8%|▊         | 39/500 [00:07<01:24,  5.46it/s]  8%|▊         | 40/500 [00:07<01:23,  5.52it/s]  8%|▊         | 41/500 [00:07<01:23,  5.51it/s]  8%|▊         | 42/500 [00:07<01:22,  5.53it/s]  9%|▊         | 43/500 [00:07<01:22,  5.54it/s]  9%|▉         | 44/500 [00:08<01:22,  5.52it/s]  9%|▉         | 45/500 [00:08<01:22,  5.51it/s]  9%|▉         | 46/500 [00:08<01:21,  5.55it/s]  9%|▉         | 47/500 [00:08<01:21,  5.56it/s] 10%|▉         | 48/500 [00:08<01:21,  5.58it/s] 10%|▉         | 49/500 [00:08<01:20,  5.59it/s] 10%|█         | 50/500 [00:09<01:20,  5.62it/s] 10%|█         | 51/500 [00:09<01:19,  5.63it/s] 10%|█         | 52/500 [00:09<01:18,  5.69it/s] 11%|█         | 53/500 [00:09<01:20,  5.59it/s] 11%|█         | 54/500 [00:09<01:19,  5.63it/s] 11%|█         | 55/500 [00:10<01:19,  5.60it/s] 11%|█         | 56/500 [00:10<01:19,  5.56it/s] 11%|█▏        | 57/500 [00:10<01:20,  5.53it/s] 12%|█▏        | 58/500 [00:10<01:19,  5.58it/s] 12%|█▏        | 59/500 [00:10<01:20,  5.50it/s] 12%|█▏        | 60/500 [00:10<01:20,  5.49it/s] 12%|█▏        | 61/500 [00:11<01:20,  5.47it/s] 12%|█▏        | 62/500 [00:11<01:19,  5.52it/s] 13%|█▎        | 63/500 [00:11<01:19,  5.47it/s] 13%|█▎        | 64/500 [00:11<01:19,  5.49it/s] 13%|█▎        | 65/500 [00:11<01:19,  5.49it/s] 13%|█▎        | 66/500 [00:12<01:18,  5.53it/s] 13%|█▎        | 67/500 [00:12<01:19,  5.45it/s] 14%|█▎        | 68/500 [00:12<01:18,  5.49it/s] 14%|█▍        | 69/500 [00:12<01:17,  5.57it/s] 14%|█▍        | 70/500 [00:12<01:17,  5.52it/s] 14%|█▍        | 71/500 [00:12<01:17,  5.53it/s] 14%|█▍        | 72/500 [00:13<01:18,  5.48it/s] 15%|█▍        | 73/500 [00:13<01:17,  5.51it/s] 15%|█▍        | 74/500 [00:13<01:17,  5.51it/s] 15%|█▌        | 75/500 [00:13<01:17,  5.48it/s] 15%|█▌        | 76/500 [00:13<01:18,  5.42it/s] 15%|█▌        | 77/500 [00:14<01:16,  5.50it/s] 16%|█▌        | 78/500 [00:14<01:15,  5.56it/s] 16%|█▌        | 79/500 [00:14<01:15,  5.57it/s] 16%|█▌        | 80/500 [00:14<01:16,  5.49it/s] 16%|█▌        | 81/500 [00:14<01:16,  5.51it/s] 16%|█▋        | 82/500 [00:14<01:15,  5.56it/s] 17%|█▋        | 83/500 [00:15<01:16,  5.46it/s] 17%|█▋        | 84/500 [00:15<01:15,  5.54it/s] 17%|█▋        | 85/500 [00:15<01:14,  5.60it/s] 17%|█▋        | 86/500 [00:15<01:14,  5.54it/s] 17%|█▋        | 87/500 [00:15<01:14,  5.54it/s] 18%|█▊        | 88/500 [00:16<01:14,  5.55it/s] 18%|█▊        | 89/500 [00:16<01:15,  5.48it/s] 18%|█▊        | 90/500 [00:16<01:15,  5.40it/s] 18%|█▊        | 91/500 [00:16<01:14,  5.47it/s] 18%|█▊        | 92/500 [00:16<01:13,  5.52it/s] 19%|█▊        | 93/500 [00:16<01:14,  5.43it/s] 19%|█▉        | 94/500 [00:17<01:14,  5.45it/s] 19%|█▉        | 95/500 [00:17<01:15,  5.38it/s] 19%|█▉        | 96/500 [00:17<01:15,  5.36it/s] 19%|█▉        | 97/500 [00:17<01:16,  5.24it/s] 20%|█▉        | 98/500 [00:17<01:15,  5.31it/s] 20%|█▉        | 99/500 [00:18<01:14,  5.40it/s] 20%|██        | 100/500 [00:18<01:13,  5.43it/s] 20%|██        | 101/500 [00:18<01:13,  5.44it/s] 20%|██        | 102/500 [00:18<01:12,  5.46it/s] 21%|██        | 103/500 [00:18<01:12,  5.45it/s] 21%|██        | 104/500 [00:18<01:12,  5.45it/s] 21%|██        | 105/500 [00:19<01:12,  5.45it/s] 21%|██        | 106/500 [00:19<01:11,  5.50it/s] 21%|██▏       | 107/500 [00:19<01:11,  5.52it/s] 22%|██▏       | 108/500 [00:19<01:10,  5.56it/s] 22%|██▏       | 109/500 [00:19<01:10,  5.55it/s] 22%|██▏       | 110/500 [00:20<01:10,  5.50it/s] 22%|██▏       | 111/500 [00:20<01:10,  5.55it/s] 22%|██▏       | 112/500 [00:20<01:09,  5.55it/s]/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/controlnet_aux/mediapipe_face/mediapipe_face_common.py:7: UserWarning: The module 'mediapipe' is not installed. The package will have limited functionality. Please install it using the command: pip install 'mediapipe'
+  warnings.warn(
+Seed set to 0
+Traceback (most recent call last):
+  File "launch.py", line 251, in <module>
+    main(args, extras)
+  File "launch.py", line 105, in main
+    dm = threestudio.find(cfg.data_type)(cfg.data)
+  File "/home/xshe/GE/threestudio/data/gs_load.py", line 385, in __init__
+    self.cfg = parse_structured(GSLoadDataModuleConfig, cfg)
+  File "/home/xshe/GE/threestudio/utils/config.py", line 122, in parse_structured
+    scfg = OmegaConf.structured(fields(**cfg))
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/dictconfig.py", line 375, in __getitem__
+    self._format_and_raise(key=key, value=None, cause=e)
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/base.py", line 231, in _format_and_raise
+    format_and_raise(
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/_utils.py", line 899, in format_and_raise
+    _raise(ex, cause)
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/_utils.py", line 797, in _raise
+    raise ex.with_traceback(sys.exc_info()[2])  # set env var OC_CAUSE=1 for full trace
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/dictconfig.py", line 369, in __getitem__
+    return self._get_impl(key=key, default_value=_DEFAULT_MARKER_)
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/dictconfig.py", line 451, in _get_impl
+    return self._resolve_with_default(
+  File "/home/xshe/anaconda3/envs/GE/lib/python3.8/site-packages/omegaconf/basecontainer.py", line 96, in _resolve_with_default
+    raise MissingMandatoryValue("Missing mandatory value: $FULL_KEY")
+omegaconf.errors.MissingMandatoryValue: Missing mandatory value: data.source
+    full_key: data.source
+    object_type=dict
